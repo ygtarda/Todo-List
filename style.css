@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.todo-input {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 70%;
+}
+
+.todo-button {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background: #ff6f47;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.todo-button:hover {
+    background: #d65a36;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    list-style: none;
+    width: 100%;
+}
+
+.todo {
+    margin: 0.5rem 0;
+    background: white;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.todo li {
+    flex: 1;
+    padding: 0 0.5rem;
+}
+
+.trash-btn,
+.complete-btn {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.2rem;
+    border-radius: 3px;
+}
+
+.complete-btn {
+    background: #73ba3c;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+    background: #e0e0e0;
+}
